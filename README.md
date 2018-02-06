@@ -8,3 +8,5 @@ Web page that will help you with blocking third party tracking. after helping yo
 
 ## CHALLENGES
 * can not prove is user installed the chrome extension and if their data is not being tracked by third party trackers (Google Chrome doesnt enable external websites access to installed extensions)
+* Do We need flash channels or we can simply do it in the IOTA Network?
+* Algorithm that gets unique interesting Data from user.
