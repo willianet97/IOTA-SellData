@@ -1,0 +1,41 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title MonIOTA
+    meta(name='description', content=' Sell your browser Data for IOTA, instead of get it stolen!')
+    meta(name='author', content='William Nester')
+    link(rel='stylesheet', href='/css/index.css')
+
+  body
+    video#bgvid(playsinline='', autoplay='', muted='', loop='')
+      source(src='https://s3.us-east-2.amazonaws.com/willsiota/IOTAWallpaper.webm', type='video/webm')
+
+    div#InstructionBar(style= "display:block")
+      h1 Sell Your Browsing Data
+      p
+        | Do not let big companies just take your data and don't give you anything on exchange, start selling you browser data for IOTA.
+      p
+        | When you visit a website, online trackers and the site itself may be able to identify you, this data is captured by advertising companies so they can create content that will drive you to their site.
+      p
+        | They are able to track your data because you are allowing cookies and browser fingerprinting - so for you to be able to sell your data, first you have to install this privacy plugin, this will configure your browser to thwart tracking.
+      p
+        | If you are interested and you are using a Chrome Browser please click here:
+
+
+      button#buttonH(onclick="openInstructions()") INSTRUCTIONS
+
+    div#instructionsDiv(style= "display:none")
+      p
+      | First you have to click Install plugin, this button will take you to the Chrome Webstore, you have to download the Privacy Badger plugin that will block spying ads and invisible trackers. the plugin is there to ensure that companies can't track your browsing without your consent - after installing it you will then come back to this webpage.
+      button#buttonH( onclick="window.open('https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp','_blank')") INSTALL PLUGIN
+
+      p
+      | After you download the Privacy Badger plugin you will click on Check For Plugin, and if we see that everything is on place you will be able to start getting IOTA for your Data. 
+
+      button#buttonH(onclick="checkBlockedCookies()") CHECK FOR PLUGIN 
+
+script
+  {script-instructions}
+  {script-checkcookies}

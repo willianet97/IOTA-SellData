@@ -1,0 +1,34 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title MonIOTA
+    meta(name='description', content=' Sell your browser Data for IOTA, instead of get it stolen!')
+    meta(name='author', content='William Nester')
+    link(rel='stylesheet', href='/css/index.css')
+
+  body
+
+    #InstructionBar
+      h1 Congratulations
+      p
+        | get computer fingerprint https://panopticlick.eff.org/static/browser-uniqueness.pdf, https://www.npmjs.com/package/express-fingerprint, https://www.npmjs.com/package/fingerprintjs2
+      p
+        | Sign In
+      
+      button#buttonH(onclick="") Register
+      button#buttonH Log In
+
+      div#instructionsDiv(style= "display:none", onclick="checkBlockedCookies()")
+        img#stepImg(src="/imgInstructions/step1.png", alt="")
+        img#stepImg(src="/imgInstructions/step2.png", alt="")
+        img#stepImg(src="/imgInstructions/step3.png", alt="")
+        img#stepImg(src="/imgInstructions/step4.png", alt="")
+        img#stepImg(src="/imgInstructions/step5.png", alt="")
+        button#buttonH Check For Cookies
+
+    img#backgroundImage(src="/imgInstructions/iota.svg", alt="")
+script
+  {script-instructions}
+  {script-checkcookies}

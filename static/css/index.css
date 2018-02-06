@@ -1,0 +1,175 @@
+$green: #90feb5;
+$action-color: $green;
+
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,200,700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Source Code Pro', monospace;
+  background: #00223e;
+}
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-45%);
+  -webkit-filter: brightness(0.7);
+}
+#InstructionBar {
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight: 100;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  padding: 2rem;
+  width: 70%;
+  margin: 10rem;
+  float: center;
+  font-size: 1.2rem;
+}
+
+#instructionsDiv{
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight: 100;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  padding: 2rem;
+  width: 70%;
+  margin: 10rem;
+  float: center;
+  font-size: 1.2rem;
+}
+
+#buttonH {
+  -webkit-font-smoothing: antialiased;
+  background-color: #222;
+  border: none;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: white;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+  margin: 10px auto 5px auto;
+  display: block;
+}
+
+#buttonH:hover{
+  -webkit-animation-name: hvr-wobble-to-top-right;
+  animation-name: hvr-wobble-to-top-right;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+
+}
+
+#stepImg {
+    width: 70%;
+    margin: 1%
+}
+
+#backgroundImage{
+  position: fixed;
+  bottom: -10%;
+  right: -10%;
+  height: 90%;
+  z-index: 0;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+@keyframes hvr-wobble-to-top-right{
+
+16.65% {
+  -webkit-transform: translate(8px, -8px);
+  transform: translate(8px, -8px);
+}
+
+33.3% {
+  -webkit-transform: translate(-6px, 6px);
+  transform: translate(-6px, 6px);
+}
+
+49.95% {
+  -webkit-transform: translate(4px, -4px);
+  transform: translate(4px, -4px);
+}
+
+66.6% {
+  -webkit-transform: translate(-2px, 2px);
+  transform: translate(-2px, 2px);
+}
+
+83.25% {
+  -webkit-transform: translate(1px, -1px);
+  transform: translate(1px, -1px);
+}
+
+100% {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+}
+
+.header {
+  background: url("https://drive.google.com/file/d/1-TdtstG9qJSmVRQDfhzbtmAaQMxzvKDS/view");
+  background-position: center;
+}
+.header .page-title {
+  font-weight: 200;
+  font-size: 80px;
+  text-align: center;
+  padding: 100px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.nav {
+  background: #000;
+  text-align: center;
+}
+.nav li {
+  display: inline-block;
+}
+.nav a {
+  display: inline-block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+.nav a:hover {
+  background-color: #3ab795;
+  text-decoration: underline;
+}
+.main-content {
+  margin: 50px auto;
+  max-width: 600px;
+}
+.main-content p {
+  line-height: 1.6;
+  margin-bottom: 1.7em;
+}
+.footer {
+  margin: 50px auto;
+  max-width: 600px;
+  border-top: 1px solid #444;
+  padding: 20px 0;
+}
+.footer p {
+  color: #444;
+  font-size: 12px;
+}
